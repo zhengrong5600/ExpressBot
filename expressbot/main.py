@@ -58,9 +58,9 @@ def bot_start(message):
 def bot_help(message):
     bot.send_chat_action(message.chat.id, 'typing')
     bot.send_message(message.chat.id,
-                     "咱能帮汝查询快（shuǐ）递（biǎo）信息啦~ 有问题的话就去 @BennyThink 呗。\n"
-                     "**⚠由于快递100的接口限制，可能会导致超出查询上限，目前已暂停轮询推送⚠**\n"
-                     "项目地址 https://github.com/BennyThink/ExpressBot 欢迎PR", parse_mode='Markdown')
+                     "你好"
+                     "**我是一个机器人**\n"
+                     "有什么问题可以联系：@cyIThk_bot", parse_mode='Markdown')
     bot.send_message(message.chat.id,
                      "直接发送运单编号即可查询（并添加到追踪中）\n"
                      "如果汝的单号带有字母，请使用`/start danhao123`\n"
