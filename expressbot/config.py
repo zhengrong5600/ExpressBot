@@ -6,7 +6,7 @@ import os
 
 # Mandatory
 
-TOKEN = os.environ.get("TOKEN") or 'TOKEN'
+TOKEN = os.environ.get("1966028679:AAEbegQxTI8q8_yjGkAY7d_bGaH8zdjX9JY") or 'TOKEN'
 # Optional, if you leave TURING_KEY with blank, the robot won't chat with you.
 TURING_KEY = os.environ.get("TURING") or 'TURING'
 
