@@ -17,7 +17,7 @@ def send_turing(key, info, userid):
     :param userid: chat_id, for context parse
     :return: response from Turing Bot, in text.
     """
-    return requests.get(' http://115.159.180.177:6789/chat?text={}'.format(info)).json()['text']
+    return requests.get(' http://api.qingyunke.com/api.php?key=free&appid=0&msg={}'.format(info)).json()['msg']
 
     data = {
         "key": key,
@@ -28,7 +28,7 @@ def send_turing(key, info, userid):
 
     # TODO: use local cert to prevent from MITM, worst idea ever.
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-    url = 'https://www.tuling123.com/openapi/api'
+    url = 'http://api.qingyunke.com/api.php'
     result = requests.post(url, json=data, verify=False).text
     return json.loads(result).get('text')
 
